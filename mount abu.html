@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mount Abu – Hill Station & Lake | Rajasthan Tourism</title>
+  <meta name="description" content="Mount Abu, the only hill station in Rajasthan. Explore Nakki Lake, Dilwara Temples, Guru Shikhar, Sunset Point and scenic views.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Mount Abu – Hill Station & Lake | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Mount Abu trip: hill station attractions, temples, lake, and scenic viewpoints.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-mount-abu-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-mount-abu-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#2e8b57;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#2e8b57;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #2e8b57;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#2e8b57;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#2e8b57;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#2e8b57;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#2e8b57;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mount Abu – Hill Station & Lake</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html" class="active">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Mount Abu, the only hill station in Rajasthan, offers a cool climate, scenic lakes, and temples. It is popular for both nature lovers and spiritual seekers.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Mount Abu has been a retreat for centuries, known for its Nakki Lake, ancient Dilwara Temples, and Guru Shikhar peak. The hill station blends natural beauty with cultural and religious significance.
+      </p>
+      <ul>
+        <li><b>Ancient Era:</b> Hill retreats and small settlements.</li>
+        <li><b>12th–15th c.:</b> Dilwara Temples built by Jain patrons.</li>
+        <li><b>Modern Era:</b> Tourism, sunset points, lakes, and trekking attract visitors.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Mount Abu Heritage & Attractions ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-nakki-lake.jpg?raw=1" alt="Nakki Lake">
+        <div><b>Nakki Lake</b> – Scenic lake and boating <span class="toggle-icon">➕</span>
+          <div class="details">Nakki Lake is the centerpiece of Mount Abu, offering boating, gardens, and relaxing views surrounded by hills.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-dilwara-temples.jpg?raw=1" alt="Dilwara Temples">
+        <div><b>Dilwara Temples</b> – Exquisite Jain temples <span class="toggle-icon">➕</span>
+          <div class="details">Renowned for marble architecture, intricate carvings, and spiritual ambiance; a key pilgrimage site.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-guru-shikhar.jpg?raw=1" alt="Guru Shikhar">
+        <div><b>Guru Shikhar</b> – Highest peak in Rajasthan <span class="toggle-icon">➕</span>
+          <div class="details">Offers panoramic views, sunset photography, and a temple dedicated to Guru Dattatreya.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-sunset-point.jpg?raw=1" alt="Sunset Point">
+        <div><b>Sunset Point</b> – Hilltop viewpoint <span class="toggle-icon">➕</span>
+          <div class="details">Popular for sunset views over the Aravalli hills, a must-visit for photographers and tourists.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Udaipur Airport (165 km)</div>
+      <div><b>Railway:</b> Abu Road Station (28 km)</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Nakki Lake → Dilwara Temples → Sunset Point.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Guru Shikhar trek, local sightseeing.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-nakki-lake.jpg?raw=1" alt="Nakki Lake">
+      <img src="https://www.dropbox.com/scl/fi/your-dilwara-temples.jpg?raw=1" alt="Dilwara Temples">
+      <img src="https://www.dropbox.com/scl/fi/your-guru-shikhar.jpg?raw=1" alt="Guru Shikhar">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Udaipur Airport (165 km).<br>
+       <b>Rail:</b> Abu Road Station (28 km), connected to Delhi, Mumbai, Jaipur.<br>
+       <b>Road:</b> Connected by National Highways to Udaipur, Ahmedabad, and surrounding areas.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.0!2d72.708!3d24.593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzAwLjAiTiA3M8KwNDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Mount Abu Heritage & Attractions ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>

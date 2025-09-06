@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chittorgarh – Historic Fort City | Rajasthan Tourism</title>
+  <meta name="description" content="Chittorgarh, historic city of Rajasthan. Explore Chittorgarh Fort, Vijay Stambh, Kirti Stambh, Padmini Palace and Rajput heritage.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Chittorgarh – Historic Fort City | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Chittorgarh trip: forts, towers, palaces, and Rajput history.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-chittorgarh-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-chittorgarh-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#8B0000;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#8B0000;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #8B0000;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#8B0000;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#8B0000;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#8B0000;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#8B0000;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chittorgarh – Historic Fort City</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html" class="active">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Chittorgarh, the historic capital of Mewar, is famed for its massive fort, Rajput valor, and medieval architecture. It is one of the largest forts in India.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        The city has been a symbol of Rajput bravery and culture. Chittorgarh Fort has witnessed sieges, heroic battles, and tales of Rajput queens. Its towers, palaces, and temples reflect the grandeur of Mewar rulers.
+      </p>
+      <ul>
+        <li><b>7th–12th c.:</b> Establishment and expansion of the fort.</li>
+        <li><b>13th–16th c.:</b> Vijay Stambh and Kirti Stambh constructed; historic battles.</li>
+        <li><b>Modern era:</b> Tourism, heritage walks, and cultural festivals.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Chittorgarh Heritage ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-chittorgarh-fort.jpg?raw=1" alt="Chittorgarh Fort">
+        <div><b>Chittorgarh Fort</b> – Massive historic fort <span class="toggle-icon">➕</span>
+          <div class="details">Spanning 700 acres, it includes palaces, gates, temples, and towers. UNESCO World Heritage site.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-vijay-stambh.jpg?raw=1" alt="Vijay Stambh">
+        <div><b>Vijay Stambh</b> – Tower of Victory <span class="toggle-icon">➕</span>
+          <div class="details">Built by Rana Kumbha in 1448 to commemorate victory over Muslim rulers, adorned with intricate carvings.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-kirti-stambh.jpg?raw=1" alt="Kirti Stambh">
+        <div><b>Kirti Stambh</b> – Tower of Fame <span class="toggle-icon">➕</span>
+          <div class="details">Dedicated to Jain Tirthankaras, it is a 22-meter tall tower with detailed sculptures.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-padmini-palace.jpg?raw=1" alt="Padmini Palace">
+        <div><b>Padmini Palace</b> – Historic palace of Rani Padmini <span class="toggle-icon">➕</span>
+          <div class="details">Known for its Rajputana architecture and legendary tales of Queen Padmini.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Udaipur Airport (120 km)</div>
+      <div><b>Railway:</b> Chittorgarh Railway Station</div>
+      <div><b>Stay:</b> 1–2 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Chittorgarh Fort → Vijay Stambh → Kirti Stambh → Padmini Palace.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-chittorgarh-fort.jpg?raw=1" alt="Chittorgarh Fort">
+      <img src="https://www.dropbox.com/scl/fi/your-vijay-stambh.jpg?raw=1" alt="Vijay Stambh">
+      <img src="https://www.dropbox.com/scl/fi/your-kirti-stambh.jpg?raw=1" alt="Kirti Stambh">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Udaipur Airport (120 km).<br>
+       <b>Rail:</b> Chittorgarh Railway Station, connected to Delhi, Jaipur, Udaipur.<br>
+       <b>Road:</b> National Highways connect Chittorgarh to Udaipur, Jaipur, Kota.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116128.0!2d74.633!3d24.883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzAwLjAiTiA3NMKwMzgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Chittorgarh Heritage ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kota – The City of Lakes & Forts | Rajasthan Tourism</title>
+  <meta name="description" content="Kota, the city of forts and rivers in Rajasthan. Explore River Front Kota, Kishor Sagar Talab, Kota Fort, City Park and local heritage.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Kota – The City of Lakes & Forts | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Kota trip: rivers, forts, parks, and rich heritage of Rajasthan.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-kota-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-kota-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#a52a2a;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#a52a2a;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #a52a2a;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#a52a2a;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#a52a2a;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#a52a2a;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#a52a2a;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kota – The City of Lakes & Forts</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html" class="active">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Kota, located on the banks of the Chambal River, is known for its forts, gardens, and scenic riverside views. It is a historic city with a rich cultural and architectural heritage.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Kota has been inhabited since ancient times, with historical structures from the Bundi and Kota rulers. The city grew around the Chambal River and became known for its forts, palaces, and public gardens.
+      </p>
+      <ul>
+        <li><b>c. 10th–12th c.:</b> Bundi-Kota region under local rulers, construction of forts.</li>
+        <li><b>17th–18th c.:</b> Kota developed as a princely state with palaces, gardens and riverfronts.</li>
+        <li><b>19th c.:</b> Kota Fort, Kishor Sagar and City Park established and maintained.</li>
+        <li><b>1947–present:</b> Integration into Rajasthan; city known for education, tourism, and riverfront attractions.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Kota Heritage & Attractions ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-riverfront-kota.jpg?raw=1" alt="River Front Kota">
+        <div><b>River Front Kota</b> – Scenic riverside promenade <span class="toggle-icon">➕</span>
+          <div class="details">The riverfront area of Kota along the Chambal River offers walking paths, gardens, and serene views of the city and river.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-kishor-sagar.jpg?raw=1" alt="Kishor Sagar Talab">
+        <div><b>Kishor Sagar Talab</b> – Historical lake with palace views <span class="toggle-icon">➕</span>
+          <div class="details">Kishor Sagar Talab is a picturesque lake in Kota featuring palaces and gardens on its banks, ideal for photography and leisure walks.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-kota-fort.jpg?raw=1" alt="Kota Fort">
+        <div><b>Kota Fort</b> – Historic fort overlooking the city <span class="toggle-icon">➕</span>
+          <div class="details">Kota Fort, built by local rulers, features massive walls, gates, and panoramic city views. A symbol of Kota's royal past.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-city-park.jpg?raw=1" alt="City Park Kota">
+        <div><b>City Park</b> – Public park and leisure area <span class="toggle-icon">➕</span>
+          <div class="details">A popular spot for families and tourists, City Park offers gardens, walking trails, and open spaces for relaxation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Kota Airport (8 km)</div>
+      <div><b>Railway:</b> Kota Junction</div>
+      <div><b>Stay:</b> 1–2 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> River Front Kota → Kishor Sagar Talab → Kota Fort.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 City Park, local markets, and sightseeing.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-riverfront-kota.jpg?raw=1" alt="River Front Kota">
+      <img src="https://www.dropbox.com/scl/fi/your-kishor-sagar.jpg?raw=1" alt="Kishor Sagar Talab">
+      <img src="https://www.dropbox.com/scl/fi/your-kota-fort.jpg?raw=1" alt="Kota Fort">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Kota Airport (8 km).<br>
+       <b>Rail:</b> Kota Junction, connected to Delhi, Jaipur, Mumbai.<br>
+       <b>Road:</b> National Highways link Kota to Jaipur, Udaipur, and neighboring states.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29316.0!2d75.825!3d25.180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDExJzAwLjAiTiA3NcKwNDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Kota Heritage & Attractions ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>

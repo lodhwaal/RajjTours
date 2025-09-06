@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jaisalmer – The Golden City | Rajasthan Tourism</title>
+  <meta name="description" content="Jaisalmer, the Golden City of Rajasthan. Explore Jaisalmer Fort, Patwon Ki Haveli, Gadisar Lake, Sam Sand Dunes and desert culture.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Jaisalmer – The Golden City | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Jaisalmer trip: forts, havelis, lakes, dunes, and desert culture.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-jaisalmer-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-jaisalmer-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#DAA520;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#DAA520;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #DAA520;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#DAA520;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#DAA520;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#DAA520;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#DAA520;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaisalmer – The Golden City</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html" class="active">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Jaisalmer, known as the Golden City, is famous for its sandstone architecture, desert landscapes, and historic havelis. It is located in the heart of the Thar Desert.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Established in 1156 CE by Rawal Jaisal, Jaisalmer developed as a trading hub in the Thar Desert. Its massive fort, intricately carved havelis, and proximity to desert dunes attract travelers worldwide.
+      </p>
+      <ul>
+        <li><b>12th c.:</b> Jaisalmer Fort constructed by Rawal Jaisal.</li>
+        <li><b>15th–18th c.:</b> Patwon Ki Haveli and other mansions built.</li>
+        <li><b>Modern era:</b> Tourism, desert safaris, and cultural heritage popularize Jaisalmer globally.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Jaisalmer Heritage & Attractions ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-jaisalmer-fort.jpg?raw=1" alt="Jaisalmer Fort">
+        <div><b>Jaisalmer Fort</b> – Massive desert fort <span class="toggle-icon">➕</span>
+          <div class="details">A UNESCO World Heritage site, it dominates the city skyline and houses temples, shops, and residences inside.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-patwon-haveli.jpg?raw=1" alt="Patwon Ki Haveli">
+        <div><b>Patwon Ki Haveli</b> – Lavish sandstone mansion <span class="toggle-icon">➕</span>
+          <div class="details">Famous for ornate carvings and architecture, representing the wealth of Jaisalmer’s merchant families.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-gadisar-lake.jpg?raw=1" alt="Gadisar Lake">
+        <div><b>Gadisar Lake</b> – Historic water reservoir <span class="toggle-icon">➕</span>
+          <div class="details">Built in the 14th century, it provides a serene spot for boating and sunset photography.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-sam-sand-dunes.jpg?raw=1" alt="Sam Sand Dunes">
+        <div><b>Sam Sand Dunes</b> – Desert safari & cultural shows <span class="toggle-icon">➕</span>
+          <div class="details">Experience camel rides, folk performances, and stunning sunsets over the Thar Desert dunes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Feb</div>
+      <div><b>Nearest Airport:</b> Jodhpur Airport (285 km)</div>
+      <div><b>Railway:</b> Jaisalmer Railway Station</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Jaisalmer Fort → Patwon Ki Haveli → Gadisar Lake.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Sam Sand Dunes desert safari and cultural activities.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-jaisalmer-fort.jpg?raw=1" alt="Jaisalmer Fort">
+      <img src="https://www.dropbox.com/scl/fi/your-patwon-haveli.jpg?raw=1" alt="Patwon Ki Haveli">
+      <img src="https://www.dropbox.com/scl/fi/your-gadisar-lake.jpg?raw=1" alt="Gadisar Lake">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jodhpur Airport (285 km).<br>
+       <b>Rail:</b> Jaisalmer Railway Station, connected to Delhi, Jaipur, Jodhpur.<br>
+       <b>Road:</b> Well-connected via highways to Jodhpur, Bikaner, and surrounding desert towns.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116219.0!2d70.915!3d26.915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzAwLjAiTiA3MMKwNTUnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Jaisalmer Heritage & Attractions ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>

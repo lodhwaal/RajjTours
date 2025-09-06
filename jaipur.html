@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jaipur – The Pink City | Rajasthan Tourism</title>
+  <meta name="description" content="Jaipur, the Pink City of Rajasthan. Explore Amber Fort, Hawa Mahal, Jantar Mantar, City Palace and royal heritage.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Jaipur – The Pink City | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Jaipur trip: forts, palaces, heritage monuments, and markets.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-jaipur-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-jaipur-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#D2691E;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#D2691E;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #D2691E;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#D2691E;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#D2691E;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#D2691E;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#D2691E;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaipur – The Pink City</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html" class="active">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Jaipur, the Pink City, is Rajasthan’s capital and a UNESCO World Heritage city. Known for its royal palaces, forts, and vibrant bazaars, Jaipur represents the soul of Rajputana architecture.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Founded in 1727 by Maharaja Sawai Jai Singh II, Jaipur was India’s first planned city. Its pink-colored buildings symbolize hospitality. The city is famous for gems, handicrafts, and its grand heritage structures.
+      </p>
+      <ul>
+        <li><b>18th c.:</b> City founded by Jai Singh II, construction of City Palace and Jantar Mantar.</li>
+        <li><b>19th c.:</b> Pink makeover for Prince Albert’s visit.</li>
+        <li><b>Modern era:</b> UNESCO heritage city, hub of culture and tourism.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Jaipur Heritage ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-amber-fort.jpg?raw=1" alt="Amber Fort">
+        <div><b>Amber Fort</b> – Majestic hill fort <span class="toggle-icon">➕</span>
+          <div class="details">Built in red sandstone and marble, Amber Fort showcases Rajput architecture with ornate halls and Sheesh Mahal.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-hawa-mahal.jpg?raw=1" alt="Hawa Mahal">
+        <div><b>Hawa Mahal</b> – Palace of Winds <span class="toggle-icon">➕</span>
+          <div class="details">Iconic 5-storey palace with honeycomb windows, built for royal women to view street life unseen.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-jantar-mantar.jpg?raw=1" alt="Jantar Mantar">
+        <div><b>Jantar Mantar</b> – Astronomical observatory <span class="toggle-icon">➕</span>
+          <div class="details">UNESCO site with world’s largest stone sundial, built by Jai Singh II for precise astronomical calculations.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-city-palace.jpg?raw=1" alt="City Palace">
+        <div><b>City Palace</b> – Royal residence <span class="toggle-icon">➕</span>
+          <div class="details">A blend of Rajput and Mughal styles, still partly the residence of Jaipur’s royal family.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Jaipur International Airport</div>
+      <div><b>Railway:</b> Jaipur Junction</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>2 Days:</b> Amber Fort → Hawa Mahal → Jantar Mantar → City Palace → Markets (Johari, Bapu).</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-amber-fort.jpg?raw=1" alt="Amber Fort">
+      <img src="https://www.dropbox.com/scl/fi/your-hawa-mahal.jpg?raw=1" alt="Hawa Mahal">
+      <img src="https://www.dropbox.com/scl/fi/your-jantar-mantar.jpg?raw=1" alt="Jantar Mantar">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jaipur Airport, well connected to Delhi, Mumbai, Kolkata.<br>
+       <b>Rail:</b> Jaipur Junction links major Indian cities.<br>
+       <b>Road:</b> Delhi–Jaipur highway (NH48), buses and taxis widely available.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.0!2d75.82!3d26.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzM2LjAiTiA3NcKwNDknMTIuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Jaipur Heritage ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>

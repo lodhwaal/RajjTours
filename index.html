@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rajasthan Tourism – Land of Kings</title>
+  <meta name="description" content="Rajasthan Tourism – Jaipur, Jodhpur, Jaisalmer, Udaipur, Pushkar, Kota, Mount Abu, Chittorgarh.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* kept same font & text size as your city pages */
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {
+      background:url('https://www.dropbox.com/scl/fi/your-index-image.jpg?raw=1') center/cover no-repeat;
+      height:260px;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);
+    }
+    header h1 {font-size:34px;margin:0;background:rgba(0,0,0,0.45);padding:10px 18px;border-radius:6px;}
+    /* profile on top-right */
+    .header-profile {display:flex;align-items:center;gap:12px;}
+    .header-profile img {width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid #d4af37;}
+    .header-profile .name {font-weight:bold;background:rgba(0,0,0,0.45);padding:8px 12px;border-radius:6px;color:#fff;}
+    /* nav same structure as your pages */
+    nav {background:#d4af37;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#d4af37;margin-top:30px;}
+    /* timeline style & toggle kept */
+    .timeline {background:#faf7ef;border-left:4px solid #d4af37;padding:14px;border-radius:6px;max-width:1000px;margin:10px 0;}
+    .timeline ul {padding-left:20px;margin:0;}
+    .cities {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px;}
+    .city {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.08);transition:transform .18s;cursor:pointer;text-align:center;}
+    .city:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.12);}
+    .city img {width:100%;height:160px;object-fit:cover;}
+    .city div {padding:12px;font-weight:bold;color:#d4af37;}
+    .services {background:#f9f9f9;border-top:3px solid #d4af37;padding:18px;border-radius:6px;margin-top:20px;}
+    .contact {margin-top:14px;}
+    iframe.map {width:100%;height:360px;border:0;margin-top:16px;border-radius:6px;}
+    /* bottom plan button (visible and clear) */
+    .plan-wrap {text-align:center;margin:24px 0;}
+    .btn-plan {display:inline-block;padding:12px 20px;background:#d4af37;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;font-size:24px;}
+    .footer {text-align:center;padding:14px;margin-top:16px;font-size:14px;background:#f0f0f0;}
+    a {color:#d4af37;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rajasthan Tourism – Land of Kings</h1>
+    <div class="header-profile">
+      <div class="name">Rajesh Meena</div>
+      <img src="https://www.dropbox.com/scl/fi/your-profile-pic.jpg?raw=1" alt="Rajesh Meena">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Welcome to Rajasthan — royal forts, lakes, deserts and living culture. Use city pages for detailed attractions and itineraries.
+    </p>
+
+    <button onclick="toggleTimeline()" style="display:block;margin:14px 0;padding:10px 16px;background:#d4af37;color:#fff;border:none;border-radius:6px;font-size:22px;cursor:pointer;">Rajasthan Timeline</button>
+
+    <div id="timeline" class="timeline" style="max-height:0;overflow:hidden;transition:max-height .45s ease;">
+      <h2 style="margin-top:0;color:#d4af37;">Historic Journey of Rajasthan</h2>
+      <ul>
+        <li><b>2600–1900 BCE:</b> Indus Valley settlements at Kalibangan, Balathal.</li>
+        <li><b>600 BCE:</b> Matsya Mahajanapada and early settlements.</li>
+        <li><b>700–1200 CE:</b> Rise of Rajput polities; forts at Chittorgarh, Ranthambore constructed.</li>
+        <li><b>1100s CE:</b> Meena rule and influence across parts of Rajasthan before full Rajput ascendancy.</li>
+        <li><b>1559 CE:</b> Udaipur founded by Maharana Udai Singh II.</li>
+        <li><b>1700s–1800s:</b> Maratha pressures; treaties with British East India Company.</li>
+        <li><b>1947:</b> Integration of princely states into India begins.</li>
+        <li><b>1956:</b> Modern state of Rajasthan formed by reorganization.</li>
+        <li><b>Today:</b> Rajasthan—major tourism, culture, crafts and education hub.</li>
+      </ul>
+    </div>
+
+    <h2>Explore Cities</h2>
+    <div class="cities">
+      <a class="city" href="jaipur.html"><img src="https://www.dropbox.com/scl/fi/your-jaipur.jpg?raw=1" alt="Jaipur"><div>Jaipur – The Pink City</div></a>
+      <a class="city" href="jodhpur.html"><img src="https://www.dropbox.com/scl/fi/your-jodhpur.jpg?raw=1" alt="Jodhpur"><div>Jodhpur – The Blue City</div></a>
+      <a class="city" href="jaisalmer.html"><img src="https://www.dropbox.com/scl/fi/your-jaisalmer.jpg?raw=1" alt="Jaisalmer"><div>Jaisalmer – The Golden City</div></a>
+      <a class="city" href="udaipur.html"><img src="https://www.dropbox.com/scl/fi/your-udaipur.jpg?raw=1" alt="Udaipur"><div>Udaipur – The City of Lakes</div></a>
+      <a class="city" href="pushkar.html"><img src="https://www.dropbox.com/scl/fi/your-pushkar.jpg?raw=1" alt="Pushkar"><div>Pushkar – Holy Town</div></a>
+      <a class="city" href="kota.html"><img src="https://www.dropbox.com/scl/fi/your-kota.jpg?raw=1" alt="Kota"><div>Kota – Chambal & Education</div></a>
+      <a class="city" href="mount-abu.html"><img src="https://www.dropbox.com/scl/fi/your-mountabu.jpg?raw=1" alt="Mount Abu"><div>Mount Abu – Hill Station</div></a>
+      <a class="city" href="chittorgarh.html"><img src="https://www.dropbox.com/scl/fi/your-chittor.jpg?raw=1" alt="Chittorgarh"><div>Chittorgarh – Fort of Valor</div></a>
+    </div>
+
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Rajasthan tour packages</li>
+        <li>Hotel & transport arrangements</li>
+        <li>Guided city tours & local guides</li>
+        <li>Adventure, cultural experiences & events</li>
+      </ul>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:lodhwa@hotmail.com">lodhwa@hotmail.com</a></p>
+        <p>Phone: <a href="tel:+918107612691">+91-8107612691</a></p>
+        <p>WhatsApp: <a href="https://wa.me/918107612691" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+        <p>Instagram: <a href="https://instagram.com/your_insta_id" target="_blank" rel="noopener">@your_insta_id</a></p>
+        <p>Address: Flat No 1202, Block B, Anandam Apartment, Devashish City, Borkheda, Kota</p>
+      </div>
+    </div>
+
+    <h2>Rajasthan Map</h2>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7355501.828!2d69.5!3d26.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c50d0d77ff3d%3A0x6e98cbfae0c4a4c!2sRajasthan!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+
+    <!-- bottom centred Plan button that opens WhatsApp draft -->
+    <div class="plan-wrap">
+      <a class="btn-plan" href="https://wa.me/918107612691?text=Hi%2C%20I%20want%20to%20discover%20India" target="_blank" rel="noopener">Plan Your Itinerary</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Rajasthan Tourism by Rajesh Meena
+  </div>
+
+  <script>
+    function toggleTimeline(){
+      var el = document.getElementById('timeline');
+      if(!el) return;
+      if(el.style.maxHeight && el.style.maxHeight !== '0px'){ el.style.maxHeight = '0'; }
+      else { el.style.maxHeight = el.scrollHeight + 'px'; }
+    }
+    // initialize collapsed
+    document.addEventListener('DOMContentLoaded', function(){ document.getElementById('timeline').style.maxHeight = '0'; });
+  </script>
+</body>
+</html>
